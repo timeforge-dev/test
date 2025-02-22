@@ -1,1 +1,8 @@
-
+{
+    "name": "Ancient Relic #1",
+    "description": "An artifact lost to time.",
+    "image": "https://example.com/images/1.png",
+    "attributes": [
+        {"trait_type": "Power", "value": 100}
+    ]
+}
