@@ -1,0 +1,8 @@
+{
+    "name": "Time Forge Chronicles",
+    "description": "A collection of legendary tests from Time Forge.",
+    "image": "https://timeforge-game.com/wp-content/uploads/2024/11/time_forge.png",
+    "external_url": "https://timeforge-game.com",
+    "seller_fee_basis_points": 500,
+    "fee_recipient": "0x714BB5A9DE31e640f05756f6C17462df6d508268"
+}
