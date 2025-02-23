@@ -41,3 +41,6 @@ def get_nft_metadata(token_id: str):
         metadata = json.load(file)
 
     return JSONResponse(content=metadata, media_type="application/json")
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
