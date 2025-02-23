@@ -9,10 +9,11 @@ METADATA_DIR = "metadata"
 
 @app.get("/")
 def root():
-    return JSONResponse(content={"message": "API is running"}, status_code=200)
+    return JSONResponse(content={"message": "Immutable Metadata API Running"}, status_code=200)
 
 @app.get("/metadata/collection.json")
 def get_collection_metadata():
+    """Returns metadata for the NFT collection, following Immutable's format."""
     metadata_path = os.path.join(METADATA_DIR, "collection.json")
 
     if not os.path.exists(metadata_path):
@@ -25,10 +26,11 @@ def get_collection_metadata():
 
 @app.get("/metadata/{token_id}")
 def get_nft_metadata(token_id: str):
+    """Returns metadata for a specific NFT by token ID, following Immutable's format."""
     metadata_path = os.path.join(METADATA_DIR, f"{token_id}.json")
 
     if not os.path.exists(metadata_path):
-        raise HTTPException(status_code=404, detail=f"NFT metadata for token {token_id} not found")
+        raise HTTPException(status_code=404, detail=f"Metadata for token {token_id} not found")
 
     with open(metadata_path, "r") as file:
         metadata = json.load(file)
