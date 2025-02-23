@@ -11,6 +11,10 @@ app.mount("/metadata", StaticFiles(directory="metadata"), name="metadata")
 
 METADATA_DIR = "metadata"
 
+@app.get("/")
+def root():
+    return JSONResponse(content={"message": "API is running"}, status_code=200)
+
 @app.get("/metadata/collection.json")
 def get_collection_metadata():
     """Fetch the collection metadata JSON."""
