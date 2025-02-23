@@ -7,7 +7,7 @@ app = FastAPI()
 
 METADATA_DIR = "metadata"
 
-@app.get("/", methods=["GET", "HEAD"])
+@app.api_route("/", methods=["GET", "HEAD"])
 def root():
     return JSONResponse(content={"message": "Immutable Metadata API Running"}, status_code=200)
 
