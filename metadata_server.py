@@ -1,9 +1,13 @@
-import json
 import os
+import json
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
+
+# Serve the metadata folder as static files
+app.mount("/metadata", StaticFiles(directory="metadata"), name="metadata")
 
 METADATA_DIR = "metadata"
 
@@ -22,12 +26,12 @@ def get_collection_metadata():
 
 
 @app.get("/metadata/{token_id}")
-def get_nft_metadata(token_id: int):
+def get_nft_metadata(token_id: str):
     """Fetch metadata for a specific NFT based on token ID."""
     metadata_path = os.path.join(METADATA_DIR, f"{token_id}.json")
 
     if not os.path.exists(metadata_path):
-        raise HTTPException(status_code=404, detail="NFT metadata not found")
+        raise HTTPException(status_code=404, detail=f"NFT metadata for token {token_id} not found")
 
     with open(metadata_path, "r") as file:
         metadata = json.load(file)
