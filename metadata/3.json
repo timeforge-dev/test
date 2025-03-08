@@ -1,0 +1,27 @@
+{
+  "name": "Test Dummy Miner",
+  "description": "A hardened laborer designed to test resource-gathering operations. Able to mine resources from nodes containing valuable materials.",
+  "image": "https://timeforge-game.com/assets/images/miner.png",
+  "attributes": [
+    {
+      "trait_type": "Attack",
+      "value": 6
+    },
+    {
+      "trait_type": "Defense",
+      "value": 4
+    },
+    {
+      "trait_type": "Movement",
+      "value": 1
+    },
+    {
+      "trait_type": "Morale",
+      "value": 24
+    },
+    {
+      "trait_type": "Special Trait",
+      "value": "Resource Excavation"
+    }
+  ]
+}
