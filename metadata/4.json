@@ -1,0 +1,27 @@
+{
+  "name": "Test Dummy Farmer",
+  "description": "A simple caretaker created to test food-production systems. Generates raw food materials depending on the node resources available.",
+  "image": "https://timeforge-game.com/assets/images/farmer.png",
+  "attributes": [
+    {
+      "trait_type": "Attack",
+      "value": 3
+    },
+    {
+      "trait_type": "Defense",
+      "value": 5
+    },
+    {
+      "trait_type": "Movement",
+      "value": 2
+    },
+    {
+      "trait_type": "Morale",
+      "value": 24
+    },
+    {
+      "trait_type": "Special Trait",
+      "value": "Sustainable Harvest"
+    }
+  ]
+}
