@@ -1,7 +1,7 @@
 {
   "name": "Test Dummy Miner",
   "description": "A hardened laborer designed to test resource-gathering operations. Able to mine resources from nodes containing valuable materials.",
-  "image": "https://timeforge-game.com/assets/images/miner.png",
+  "image": "https://github.com/timeforge-dev/test/blob/main/images/Miner%20Dale.png",
   "attributes": [
     {
       "trait_type": "Attack",
