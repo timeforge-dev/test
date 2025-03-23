@@ -1,7 +1,7 @@
 {
   "name": "Test Dummy Soldier",
   "description": "A reliable foot soldier used for testing battlefield scenarios. Basic Formation provides a bonus if two or more soldier cards are staked together.",
-  "image": "https://github.com/timeforge-dev/test/blob/main/images/Soldier%20Hank.png",
+  "image": "https://raw.githubusercontent.com/timeforge-dev/test/main/images/Soldier%20Hank.png",
   "attributes": [
     {
       "trait_type": "Attack",
